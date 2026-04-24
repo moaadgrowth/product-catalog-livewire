@@ -1,9 +1,14 @@
 <div class="mx-auto max-w-3xl space-y-8 p-6">
     <div class="flex items-center justify-between gap-4">
         <h1 class="text-xl font-semibold">Categories</h1>
-        <a href="{{ route('products.index') }}" class="text-sm text-gray-600 underline hover:text-gray-900">
-            View shop
-        </a>
+        <div class="flex flex-wrap gap-4 text-sm">
+            <a href="{{ route('admin.products.index') }}" class="text-gray-600 hover:text-gray-900">
+                Products
+            </a>
+            <a href="{{ route('products.index') }}" class="text-gray-600 hover:text-gray-900">
+                View shop
+            </a>
+        </div>
     </div>
 
     <form wire:submit="save" class="space-y-4 rounded border border-gray-200 bg-white p-4 shadow-sm">

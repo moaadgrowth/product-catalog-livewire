@@ -2,10 +2,10 @@
     <div class="flex flex-wrap items-center justify-between gap-4">
         <h1 class="text-xl font-semibold">Products</h1>
         <div class="flex flex-wrap gap-4 text-sm">
-            <a href="{{ route('admin.categories.index') }}" class="text-gray-600 underline hover:text-gray-900">
+            <a href="{{ route('admin.categories.index') }}" class="text-gray-600 hover:text-gray-900">
                 Categories
             </a>
-            <a href="{{ route('products.index') }}" class="text-gray-600 underline hover:text-gray-900">
+            <a href="{{ route('products.index') }}" class="text-gray-600 hover:text-gray-900">
                 View shop
             </a>
         </div>
