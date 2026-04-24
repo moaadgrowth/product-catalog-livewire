@@ -5,11 +5,12 @@ namespace App\Livewire\Admin;
 use App\Models\Category;
 use Illuminate\Contracts\View\View;
 use Illuminate\Validation\Rule;
+use Illuminate\Validation\Rules\Unique;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
-#[Layout('layouts.app')]
+#[Layout('layouts.admin')]
 #[Title('Admin: Categories')]
 class CategoryIndex extends Component
 {
@@ -19,7 +20,7 @@ class CategoryIndex extends Component
     public ?int $editingId = null;
 
     /**
-     * @return array<string, list<string|\Illuminate\Validation\Rules\Unique>>
+     * @return array<string, list<string|Unique>>
      */
     protected function rules(): array
     {
